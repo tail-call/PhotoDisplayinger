@@ -12,16 +12,21 @@ struct PhotoView: View {
 
     var body: some View {
         VStack {
+
+        }
+        .frame(width: 300, height: 200)
+        .border(.black)
+        .background {
             switch model.state {
             case .started, .loading:
                 Text("Loading image...")
             case .image(let image):
                 Image(image, scale: 1, label: Text("Is this even visible?"))
+                    .resizable(resizingMode: .stretch)
             case .error(let string):
                 Text("Error: \(string)")
             }
         }
-        .frame(width: 300, height: 200)
         .onAppear {
             self.model.beginDownloading()
         }
