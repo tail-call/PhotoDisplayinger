@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-private let downloader: ObjectDownloading = ObjectDownloader()
 private let endpointURL = URL(
     string: "https://dog.ceo/api/breed/saluki/images"
 )!
 
-
 struct ContentView: View {
     @ObservedObject var state: AppState
+
+    let downloader: ObjectDownloading
 
     var body: some View {
         VStack {
@@ -43,6 +43,7 @@ struct ContentView: View {
                 do {
                     try await didStart()
                 } catch {
+                    print("⛔️ Error: \(error)")
                     state.showAlert(text: "\(error)")
                 }
             }
@@ -63,5 +64,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView(state: AppState())
+    ContentView(state: AppState(), downloader: ObjectDownloader())
 }

@@ -17,7 +17,9 @@ enum DataDownloadingError: Error {
 
 final class ObjectDownloader: ObjectDownloading {
     func download<T: Decodable>(_ type: T.Type, from url: URL) async throws -> T {
-        let (data, response) = try await URLSession.shared.data(from: url)
+        let config = URLSessionConfiguration.default
+        let session = URLSession(configuration: config)
+        let (data, response) = try await session.data(from: url)
 
         guard
             let httpResponse = response as? HTTPURLResponse,

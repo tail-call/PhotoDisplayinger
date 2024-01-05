@@ -8,7 +8,7 @@
 import Foundation
 
 struct ParsedResponse: Decodable {
-    enum Status: Decodable {
+    enum Status: String, Decodable {
         case success, error
     }
 

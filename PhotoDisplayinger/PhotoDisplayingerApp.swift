@@ -8,12 +8,13 @@
 import SwiftUI
 
 private let state = AppState()
+private let downloader = ObjectDownloader()
 
 @main
 struct PhotoDisplayingerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(state: state)
+            ContentView(state: state, downloader: downloader)
         }
     }
 }
