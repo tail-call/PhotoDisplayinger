@@ -26,9 +26,12 @@ final class PhotoViewModel: ObservableObject {
 
         Task {
             do {
-                self.state = .image(
+                let state = State.image(
                     try await downloader.downloadCGImage(from: url)
                 )
+                await MainActor.run {
+                    self.state = state
+                }
             } catch {
                 self.state = .error("\(error)")
             }

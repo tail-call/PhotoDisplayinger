@@ -45,7 +45,9 @@ final class AppState: ObservableObject {
                     from: endpointURL
                 )
 
-                photoURLsList = response.message
+                await MainActor.run {
+                    photoURLsList = response.message
+                }
             } catch {
                 print("⛔️ Error: \(error)")
 

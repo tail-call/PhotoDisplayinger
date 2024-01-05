@@ -20,8 +20,13 @@ final class RootViewModel: ObservableObject {
             receiveCompletion: { _ in
             },
             receiveValue: { urls in
-                self.photos = urls.map { url in
+                let photos = urls.map { url in
                     GlobalFactory.shared.makePhotoViewModel(url: url)
+                }
+                Task {
+                    await MainActor.run {
+                        self.photos = photos
+                    }
                 }
             }
         )
