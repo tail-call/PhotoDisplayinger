@@ -16,7 +16,7 @@ final class GlobalFactory {
         ObjectDownloader()
     }()
 
-    private lazy var appState = {
+    private lazy var appState: AppState = {
         AppState(downloader: downloader)
     }()
 
