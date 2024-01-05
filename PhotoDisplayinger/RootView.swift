@@ -7,19 +7,13 @@
 
 import SwiftUI
 
-private let endpointURL = URL(
-    string: "https://dog.ceo/api/breed/saluki/images"
-)!
-
 struct RootView: View {
-    @ObservedObject var state: AppState
-
-    let downloader: ObjectDownloading
+    @ObservedObject var appState: AppState
 
     var body: some View {
         ScrollView {
             VStack {
-                ForEach(state.photoURLsList, id: \.self) { url in
+                ForEach(appState.photoURLsList, id: \.self) { url in
                     Text("Hello, \(url)!")
                 }
             }
@@ -27,43 +21,25 @@ struct RootView: View {
         }
         .alert(
             "Error",
-            isPresented: self.$state.isPresentingAlert,
+            isPresented: self.$appState.isPresentingAlert,
             actions: {
                 Button(action: {
-                    self.state.hideAlert()
+                    self.appState.hideAlert()
                 }, label: {
                     Text("OK")
                 })
             },
             message: {
-                Text(self.state.alertMessage ?? "???")
+                Text(self.appState.alertMessage ?? "???")
             }
         )
-        .onAppear(perform: {
-            Task {
-                do {
-                    try await didStart()
-                } catch {
-                    print("⛔️ Error: \(error)")
-                    state.showAlert(text: "\(error)")
-                }
-            }
-        })
-    }
-
-    // MARK: - Private methods
-
-    private func didStart() async throws {
-        let response = try await downloader.download(
-            ParsedResponse.self,
-            from: endpointURL
-        )
-
-        state.photoURLsList = response.message
-        print(state.photoURLsList)
     }
 }
 
 #Preview {
-    RootView(state: AppState(), downloader: ObjectDownloader())
+    RootView(
+        appState: AppState(
+            downloader: ObjectDownloader()
+        )
+    )
 }

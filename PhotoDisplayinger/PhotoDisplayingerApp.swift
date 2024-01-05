@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-private let state = AppState()
 private let downloader = ObjectDownloader()
+private let state = AppState(downloader: downloader)
 
 @main
 struct PhotoDisplayingerApp: App {
     var body: some Scene {
         WindowGroup {
-            RootView(state: state, downloader: downloader)
+            GlobalFactory.shared.makeRootView()
         }
     }
 }
