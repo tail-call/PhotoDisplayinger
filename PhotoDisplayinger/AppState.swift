@@ -37,11 +37,11 @@ final class AppState: ObservableObject {
 
     // MARK: - Private methods
 
-    func afterInit() {
+    private func afterInit() {
         Task {
             do {
-                let response = try await downloader.download(
-                    ParsedResponse.self,
+                let response = try await downloader.downloadObject(
+                    of: ParsedResponse.self,
                     from: endpointURL
                 )
 

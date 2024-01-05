@@ -8,7 +8,12 @@
 import Foundation
 
 protocol ObjectDownloading {
-    func download<T: Decodable>(_ type: T.Type, from url: URL) async throws -> T
+    func downloadData(from url: URL) async throws -> Data
+
+    func downloadObject<T: Decodable>(
+        of type: T.Type,
+        from url: URL
+    ) async throws -> T
 }
 
 enum DataDownloadingError: Error {
@@ -16,7 +21,7 @@ enum DataDownloadingError: Error {
 }
 
 final class ObjectDownloader: ObjectDownloading {
-    func download<T: Decodable>(_ type: T.Type, from url: URL) async throws -> T {
+    func downloadData(from url: URL) async throws -> Data {
         let config = URLSessionConfiguration.default
         let session = URLSession(configuration: config)
         let (data, response) = try await session.data(from: url)
@@ -27,6 +32,15 @@ final class ObjectDownloader: ObjectDownloading {
         else {
             throw DataDownloadingError.downloadFailed
         }
+
+        return data
+    }
+
+    func downloadObject<T: Decodable>(
+        of type: T.Type,
+        from url: URL
+    ) async throws -> T {
+        let data = try await downloadData(from: url)
 
         let decoder = JSONDecoder()
         return try decoder.decode(type, from: data)
