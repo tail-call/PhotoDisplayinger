@@ -9,12 +9,13 @@ import SwiftUI
 
 final class PhotoViewModel: ObservableObject {
     enum State {
-        case loading
+        case started
+        case loading(Task<(), Never>)
         case image(CGImage)
         case error(String)
     }
 
-    @Published var state: State = .loading
+    @Published var state: State = .started
 
     let url: URL
 
@@ -23,8 +24,14 @@ final class PhotoViewModel: ObservableObject {
     init(url: URL, downloader: ObjectDownloading) {
         self.url = url
         self.downloader = downloader
+    }
 
-        Task {
+    func beginDownloading() {
+        guard case .started = state else {
+            return
+        }
+
+        self.state = .loading(Task {
             do {
                 let state = State.image(
                     try await downloader.downloadCGImage(from: url)
@@ -35,6 +42,6 @@ final class PhotoViewModel: ObservableObject {
             } catch {
                 self.state = .error("\(error)")
             }
-        }
+        })
     }
 }

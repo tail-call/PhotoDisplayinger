@@ -13,7 +13,7 @@ struct PhotoView: View {
     var body: some View {
         VStack {
             switch model.state {
-            case .loading:
+            case .started, .loading:
                 Text("Loading image...")
             case .image(let image):
                 Image(image, scale: 1, label: Text("Is this even visible?"))
@@ -22,5 +22,8 @@ struct PhotoView: View {
             }
         }
         .frame(width: 300, height: 200)
+        .onAppear {
+            self.model.beginDownloading()
+        }
     }
 }
