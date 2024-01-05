@@ -16,7 +16,7 @@ final class GlobalFactory {
 
     func makeRootView() -> RootView {
         RootView(
-            model: RootViewModel(appState: appState),
+            model: RootViewModel(appState: appState, factory: .shared),
             appState: appState
         )
     }

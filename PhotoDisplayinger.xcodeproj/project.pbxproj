@@ -25,6 +25,7 @@
 		B3183B6D2B4827F500F15BEE /* ObjectDownloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B6C2B4827F500F15BEE /* ObjectDownloading.swift */; };
 		B3183B702B48299F00F15BEE /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B6F2B48299F00F15BEE /* PhotoView.swift */; };
 		B3183B722B48473C00F15BEE /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B712B48473C00F15BEE /* RootViewModel.swift */; };
+		B3183B772B48812400F15BEE /* ObjectDownloading+T.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B762B48812400F15BEE /* ObjectDownloading+T.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		B3183B6C2B4827F500F15BEE /* ObjectDownloading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDownloading.swift; sourceTree = "<group>"; };
 		B3183B6F2B48299F00F15BEE /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 		B3183B712B48473C00F15BEE /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		B3183B762B48812400F15BEE /* ObjectDownloading+T.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObjectDownloading+T.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				B3183B2D2B47E66C00F15BEE /* Main.swift */,
 				B3183B582B47F21100F15BEE /* ObjectDownloader.swift */,
 				B3183B6C2B4827F500F15BEE /* ObjectDownloading.swift */,
+				B3183B762B48812400F15BEE /* ObjectDownloading+T.swift */,
 				B3183B632B48205F00F15BEE /* ObjectDownloading+CGImage.swift */,
 				B3183B652B48221F00F15BEE /* ObjectDownloadingError.swift */,
 				B3183B5C2B47F49B00F15BEE /* ParsedResponse.swift */,
@@ -310,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3183B772B48812400F15BEE /* ObjectDownloading+T.swift in Sources */,
 				B3183B642B48205F00F15BEE /* ObjectDownloading+CGImage.swift in Sources */,
 				B3183B302B47E66C00F15BEE /* RootView.swift in Sources */,
 				B3183B722B48473C00F15BEE /* RootViewModel.swift in Sources */,

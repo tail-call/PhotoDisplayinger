@@ -49,7 +49,7 @@ struct RootView: View {
     )
 
     return RootView(
-        model: RootViewModel(appState: appState),
+        model: RootViewModel(appState: appState, factory: .shared),
         appState: appState
     )
 }
