@@ -12,6 +12,13 @@ final class GlobalFactory {
 
     private init() {}
 
+    // MARK: - Public
+
+    func makeRootView() -> RootView { RootView(appState: appState) }
+    func makeAppState() -> AppState { appState }
+
+    // MARK: - Private
+
     private lazy var downloader: ObjectDownloading = {
         ObjectDownloader()
     }()
@@ -19,8 +26,4 @@ final class GlobalFactory {
     private lazy var appState: AppState = {
         AppState(downloader: downloader)
     }()
-
-    func makeRootView() -> RootView {
-        RootView(appState: appState)
-    }
 }

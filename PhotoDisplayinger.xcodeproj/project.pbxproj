@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3183B2E2B47E66C00F15BEE /* PhotoDisplayingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B2D2B47E66C00F15BEE /* PhotoDisplayingerApp.swift */; };
+		B3183B2E2B47E66C00F15BEE /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B2D2B47E66C00F15BEE /* Main.swift */; };
 		B3183B302B47E66C00F15BEE /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B2F2B47E66C00F15BEE /* RootView.swift */; };
 		B3183B322B47E66F00F15BEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3183B312B47E66F00F15BEE /* Assets.xcassets */; };
 		B3183B352B47E66F00F15BEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3183B342B47E66F00F15BEE /* Preview Assets.xcassets */; };
@@ -20,6 +20,9 @@
 		B3183B622B481B9A00F15BEE /* GlobalFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B612B481B9900F15BEE /* GlobalFactory.swift */; };
 		B3183B642B48205F00F15BEE /* ObjectDownloading+CGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B632B48205F00F15BEE /* ObjectDownloading+CGImage.swift */; };
 		B3183B662B48221F00F15BEE /* ObjectDownloadingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B652B48221F00F15BEE /* ObjectDownloadingError.swift */; };
+		B3183B682B48253800F15BEE /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B672B48253800F15BEE /* PhotoViewModel.swift */; };
+		B3183B6A2B4826DE00F15BEE /* PhotoViewModel+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B692B4826DE00F15BEE /* PhotoViewModel+Identifiable.swift */; };
+		B3183B6D2B4827F500F15BEE /* ObjectDownloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B6C2B4827F500F15BEE /* ObjectDownloading.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +44,7 @@
 
 /* Begin PBXFileReference section */
 		B3183B2A2B47E66C00F15BEE /* PhotoDisplayinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoDisplayinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3183B2D2B47E66C00F15BEE /* PhotoDisplayingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDisplayingerApp.swift; sourceTree = "<group>"; };
+		B3183B2D2B47E66C00F15BEE /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		B3183B2F2B47E66C00F15BEE /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		B3183B312B47E66F00F15BEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3183B342B47E66F00F15BEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -58,6 +61,9 @@
 		B3183B612B481B9900F15BEE /* GlobalFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFactory.swift; sourceTree = "<group>"; };
 		B3183B632B48205F00F15BEE /* ObjectDownloading+CGImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObjectDownloading+CGImage.swift"; sourceTree = "<group>"; };
 		B3183B652B48221F00F15BEE /* ObjectDownloadingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDownloadingError.swift; sourceTree = "<group>"; };
+		B3183B672B48253800F15BEE /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		B3183B692B4826DE00F15BEE /* PhotoViewModel+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoViewModel+Identifiable.swift"; sourceTree = "<group>"; };
+		B3183B6C2B4827F500F15BEE /* ObjectDownloading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDownloading.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,18 +114,11 @@
 		B3183B2C2B47E66C00F15BEE /* PhotoDisplayinger */ = {
 			isa = PBXGroup;
 			children = (
-				B3183B602B480A8300F15BEE /* Info.plist */,
-				B3183B2D2B47E66C00F15BEE /* PhotoDisplayingerApp.swift */,
-				B3183B612B481B9900F15BEE /* GlobalFactory.swift */,
-				B3183B5E2B48080500F15BEE /* AppState.swift */,
-				B3183B2F2B47E66C00F15BEE /* RootView.swift */,
-				B3183B582B47F21100F15BEE /* ObjectDownloader.swift */,
-				B3183B632B48205F00F15BEE /* ObjectDownloading+CGImage.swift */,
-				B3183B652B48221F00F15BEE /* ObjectDownloadingError.swift */,
-				B3183B5C2B47F49B00F15BEE /* ParsedResponse.swift */,
-				B3183B312B47E66F00F15BEE /* Assets.xcassets */,
-				B3183B362B47E66F00F15BEE /* PhotoDisplayinger.entitlements */,
+				B3183B6B2B48277000F15BEE /* Sources */,
 				B3183B332B47E66F00F15BEE /* Preview Content */,
+				B3183B312B47E66F00F15BEE /* Assets.xcassets */,
+				B3183B602B480A8300F15BEE /* Info.plist */,
+				B3183B362B47E66F00F15BEE /* PhotoDisplayinger.entitlements */,
 			);
 			path = PhotoDisplayinger;
 			sourceTree = "<group>";
@@ -147,6 +146,24 @@
 				B3183B4B2B47E67000F15BEE /* PhotoDisplayingerUITestsLaunchTests.swift */,
 			);
 			path = PhotoDisplayingerUITests;
+			sourceTree = "<group>";
+		};
+		B3183B6B2B48277000F15BEE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B3183B5E2B48080500F15BEE /* AppState.swift */,
+				B3183B612B481B9900F15BEE /* GlobalFactory.swift */,
+				B3183B2D2B47E66C00F15BEE /* Main.swift */,
+				B3183B582B47F21100F15BEE /* ObjectDownloader.swift */,
+				B3183B6C2B4827F500F15BEE /* ObjectDownloading.swift */,
+				B3183B632B48205F00F15BEE /* ObjectDownloading+CGImage.swift */,
+				B3183B652B48221F00F15BEE /* ObjectDownloadingError.swift */,
+				B3183B5C2B47F49B00F15BEE /* ParsedResponse.swift */,
+				B3183B672B48253800F15BEE /* PhotoViewModel.swift */,
+				B3183B692B4826DE00F15BEE /* PhotoViewModel+Identifiable.swift */,
+				B3183B2F2B47E66C00F15BEE /* RootView.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,11 +299,14 @@
 				B3183B642B48205F00F15BEE /* ObjectDownloading+CGImage.swift in Sources */,
 				B3183B302B47E66C00F15BEE /* RootView.swift in Sources */,
 				B3183B5F2B48080500F15BEE /* AppState.swift in Sources */,
+				B3183B682B48253800F15BEE /* PhotoViewModel.swift in Sources */,
 				B3183B592B47F21100F15BEE /* ObjectDownloader.swift in Sources */,
 				B3183B5D2B47F49B00F15BEE /* ParsedResponse.swift in Sources */,
-				B3183B2E2B47E66C00F15BEE /* PhotoDisplayingerApp.swift in Sources */,
+				B3183B2E2B47E66C00F15BEE /* Main.swift in Sources */,
 				B3183B662B48221F00F15BEE /* ObjectDownloadingError.swift in Sources */,
 				B3183B622B481B9A00F15BEE /* GlobalFactory.swift in Sources */,
+				B3183B6A2B4826DE00F15BEE /* PhotoViewModel+Identifiable.swift in Sources */,
+				B3183B6D2B4827F500F15BEE /* ObjectDownloading.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

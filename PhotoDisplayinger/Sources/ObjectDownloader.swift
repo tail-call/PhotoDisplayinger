@@ -7,15 +7,6 @@
 
 import Foundation
 
-protocol ObjectDownloading {
-    func downloadData(from url: URL) async throws -> Data
-
-    func downloadObject<T: Decodable>(
-        of type: T.Type,
-        from url: URL
-    ) async throws -> T
-}
-
 final class ObjectDownloader: ObjectDownloading {
     func downloadData(from url: URL) async throws -> Data {
         let config = URLSessionConfiguration.default
