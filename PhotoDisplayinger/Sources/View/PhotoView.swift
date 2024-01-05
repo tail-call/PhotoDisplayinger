@@ -19,7 +19,7 @@ struct PhotoView: View {
         .background {
             switch model.state {
             case .started, .loading:
-                ActivityIndicatorView()
+                ProgressView()
             case .image(let image):
                 Image(image, scale: 1, label: Text("Is this even visible?"))
                     .resizable(resizingMode: .stretch)
