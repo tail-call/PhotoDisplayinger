@@ -21,13 +21,10 @@ struct RootView: View {
     }
 
     var body: some View {
-        ScrollView {
-            VStack {
-                ForEach(model.photos) { photo in
-                    PhotoView(model: photo)
-                }
+        List {
+            ForEach(model.photos) { photo in
+                PhotoView(model: photo)
             }
-            .padding()
         }
         .alert(
             "Error",
