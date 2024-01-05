@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  RootView.swift
 //  PhotoDisplayinger
 //
 //  Created by Maria Zaitseva on 05.01.2024.
@@ -11,19 +11,20 @@ private let endpointURL = URL(
     string: "https://dog.ceo/api/breed/saluki/images"
 )!
 
-struct ContentView: View {
+struct RootView: View {
     @ObservedObject var state: AppState
 
     let downloader: ObjectDownloading
 
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ScrollView {
+            VStack {
+                ForEach(state.photoURLsList, id: \.self) { url in
+                    Text("Hello, \(url)!")
+                }
+            }
+            .padding()
         }
-        .padding()
         .alert(
             "Error",
             isPresented: self.$state.isPresentingAlert,
@@ -64,5 +65,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView(state: AppState(), downloader: ObjectDownloader())
+    RootView(state: AppState(), downloader: ObjectDownloader())
 }

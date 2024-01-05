@@ -14,7 +14,7 @@ private let downloader = ObjectDownloader()
 struct PhotoDisplayingerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(state: state, downloader: downloader)
+            RootView(state: state, downloader: downloader)
         }
     }
 }
