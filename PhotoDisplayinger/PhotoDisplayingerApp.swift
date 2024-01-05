@@ -7,11 +7,13 @@
 
 import SwiftUI
 
+private let state = AppState()
+
 @main
 struct PhotoDisplayingerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(state: state)
         }
     }
 }

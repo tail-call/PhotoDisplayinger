@@ -14,6 +14,9 @@
 		B3183B402B47E67000F15BEE /* PhotoDisplayingerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B3F2B47E67000F15BEE /* PhotoDisplayingerTests.swift */; };
 		B3183B4A2B47E67000F15BEE /* PhotoDisplayingerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B492B47E67000F15BEE /* PhotoDisplayingerUITests.swift */; };
 		B3183B4C2B47E67000F15BEE /* PhotoDisplayingerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B4B2B47E67000F15BEE /* PhotoDisplayingerUITestsLaunchTests.swift */; };
+		B3183B592B47F21100F15BEE /* ObjectDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B582B47F21100F15BEE /* ObjectDownloader.swift */; };
+		B3183B5D2B47F49B00F15BEE /* ParsedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B5C2B47F49B00F15BEE /* ParsedResponse.swift */; };
+		B3183B5F2B48080500F15BEE /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B5E2B48080500F15BEE /* AppState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,10 @@
 		B3183B452B47E67000F15BEE /* PhotoDisplayingerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoDisplayingerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3183B492B47E67000F15BEE /* PhotoDisplayingerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDisplayingerUITests.swift; sourceTree = "<group>"; };
 		B3183B4B2B47E67000F15BEE /* PhotoDisplayingerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDisplayingerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B3183B582B47F21100F15BEE /* ObjectDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDownloader.swift; sourceTree = "<group>"; };
+		B3183B5C2B47F49B00F15BEE /* ParsedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsedResponse.swift; sourceTree = "<group>"; };
+		B3183B5E2B48080500F15BEE /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		B3183B602B480A8300F15BEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +102,12 @@
 		B3183B2C2B47E66C00F15BEE /* PhotoDisplayinger */ = {
 			isa = PBXGroup;
 			children = (
+				B3183B602B480A8300F15BEE /* Info.plist */,
 				B3183B2D2B47E66C00F15BEE /* PhotoDisplayingerApp.swift */,
+				B3183B5E2B48080500F15BEE /* AppState.swift */,
 				B3183B2F2B47E66C00F15BEE /* ContentView.swift */,
+				B3183B582B47F21100F15BEE /* ObjectDownloader.swift */,
+				B3183B5C2B47F49B00F15BEE /* ParsedResponse.swift */,
 				B3183B312B47E66F00F15BEE /* Assets.xcassets */,
 				B3183B362B47E66F00F15BEE /* PhotoDisplayinger.entitlements */,
 				B3183B332B47E66F00F15BEE /* Preview Content */,
@@ -260,6 +271,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3183B302B47E66C00F15BEE /* ContentView.swift in Sources */,
+				B3183B5F2B48080500F15BEE /* AppState.swift in Sources */,
+				B3183B592B47F21100F15BEE /* ObjectDownloader.swift in Sources */,
+				B3183B5D2B47F49B00F15BEE /* ParsedResponse.swift in Sources */,
 				B3183B2E2B47E66C00F15BEE /* PhotoDisplayingerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +443,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhotoDisplayinger/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,6 +471,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhotoDisplayinger/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

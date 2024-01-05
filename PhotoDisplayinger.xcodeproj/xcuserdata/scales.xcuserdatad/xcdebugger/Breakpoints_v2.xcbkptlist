@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "85A08EEF-C4DD-4A8B-8045-C22B44CD7A31"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FF92995B-D604-4212-B287-8BA900F8141C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhotoDisplayinger/PhotoDisplayingerApp.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "FF92995B-D604-4212-B287-8BA900F8141C - 5cbed60369260ce7"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PhotoDisplayinger.PhotoDisplayingerApp.body.getter : some"
+                  moduleName = "PhotoDisplayinger"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/scales/Developer/code.mine/PhotoDisplayinger/PhotoDisplayinger/PhotoDisplayingerApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "223">
+               </Location>
+               <Location
+                  uuid = "FF92995B-D604-4212-B287-8BA900F8141C - f274cc60cf36854d"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.alert&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_1_0: SwiftUI.View, &#x3c4;_1_1: SwiftUI.View&gt;(_: SwiftUI.LocalizedStringKey, isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, actions: () -&gt; &#x3c4;_1_0, message: () -&gt; &#x3c4;_1_1) -&gt; some&gt;&gt;.0 in PhotoDisplayinger.PhotoDisplayingerApp.body.getter : some"
+                  moduleName = "PhotoDisplayinger"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/scales/Developer/code.mine/PhotoDisplayinger/PhotoDisplayinger/PhotoDisplayingerApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "425">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
