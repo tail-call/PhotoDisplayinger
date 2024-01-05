@@ -16,10 +16,6 @@ protocol ObjectDownloading {
     ) async throws -> T
 }
 
-enum DataDownloadingError: Error {
-    case downloadFailed
-}
-
 final class ObjectDownloader: ObjectDownloading {
     func downloadData(from url: URL) async throws -> Data {
         let config = URLSessionConfiguration.default
@@ -30,7 +26,7 @@ final class ObjectDownloader: ObjectDownloading {
             let httpResponse = response as? HTTPURLResponse,
             (200...299).contains(httpResponse.statusCode)
         else {
-            throw DataDownloadingError.downloadFailed
+            throw ObjectDownloadingError.downloadFailed
         }
 
         return data

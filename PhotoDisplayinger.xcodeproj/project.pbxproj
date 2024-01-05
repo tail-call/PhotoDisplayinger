@@ -18,6 +18,8 @@
 		B3183B5D2B47F49B00F15BEE /* ParsedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B5C2B47F49B00F15BEE /* ParsedResponse.swift */; };
 		B3183B5F2B48080500F15BEE /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B5E2B48080500F15BEE /* AppState.swift */; };
 		B3183B622B481B9A00F15BEE /* GlobalFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B612B481B9900F15BEE /* GlobalFactory.swift */; };
+		B3183B642B48205F00F15BEE /* ObjectDownloading+CGImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B632B48205F00F15BEE /* ObjectDownloading+CGImage.swift */; };
+		B3183B662B48221F00F15BEE /* ObjectDownloadingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B652B48221F00F15BEE /* ObjectDownloadingError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		B3183B5E2B48080500F15BEE /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		B3183B602B480A8300F15BEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B3183B612B481B9900F15BEE /* GlobalFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFactory.swift; sourceTree = "<group>"; };
+		B3183B632B48205F00F15BEE /* ObjectDownloading+CGImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObjectDownloading+CGImage.swift"; sourceTree = "<group>"; };
+		B3183B652B48221F00F15BEE /* ObjectDownloadingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDownloadingError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 				B3183B5E2B48080500F15BEE /* AppState.swift */,
 				B3183B2F2B47E66C00F15BEE /* RootView.swift */,
 				B3183B582B47F21100F15BEE /* ObjectDownloader.swift */,
+				B3183B632B48205F00F15BEE /* ObjectDownloading+CGImage.swift */,
+				B3183B652B48221F00F15BEE /* ObjectDownloadingError.swift */,
 				B3183B5C2B47F49B00F15BEE /* ParsedResponse.swift */,
 				B3183B312B47E66F00F15BEE /* Assets.xcassets */,
 				B3183B362B47E66F00F15BEE /* PhotoDisplayinger.entitlements */,
@@ -273,11 +279,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3183B642B48205F00F15BEE /* ObjectDownloading+CGImage.swift in Sources */,
 				B3183B302B47E66C00F15BEE /* RootView.swift in Sources */,
 				B3183B5F2B48080500F15BEE /* AppState.swift in Sources */,
 				B3183B592B47F21100F15BEE /* ObjectDownloader.swift in Sources */,
 				B3183B5D2B47F49B00F15BEE /* ParsedResponse.swift in Sources */,
 				B3183B2E2B47E66C00F15BEE /* PhotoDisplayingerApp.swift in Sources */,
+				B3183B662B48221F00F15BEE /* ObjectDownloadingError.swift in Sources */,
 				B3183B622B481B9A00F15BEE /* GlobalFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
