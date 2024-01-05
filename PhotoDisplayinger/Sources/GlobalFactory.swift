@@ -14,8 +14,18 @@ final class GlobalFactory {
 
     // MARK: - Public
 
-    func makeRootView() -> RootView { RootView(appState: appState) }
+    func makeRootView() -> RootView {
+        RootView(
+            model: RootViewModel(appState: appState),
+            appState: appState
+        )
+    }
+
     func makeAppState() -> AppState { appState }
+
+    func makePhotoViewModel(url: URL) -> PhotoViewModel {
+        PhotoViewModel(url: url, downloader: downloader)
+    }
 
     // MARK: - Private
 

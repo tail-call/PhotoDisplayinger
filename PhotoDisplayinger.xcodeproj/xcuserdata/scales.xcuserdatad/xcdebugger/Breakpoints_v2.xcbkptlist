@@ -52,5 +52,292 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "480D017D-D405-4748-927A-E29EB1B575DF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhotoDisplayinger/Sources/RootViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "init(appState:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "480D017D-D405-4748-927A-E29EB1B575DF - d42ba7c1d6c95cec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Array&lt;Foundation.URL&gt;) -&gt; () in PhotoDisplayinger.RootViewModel.init(appState: PhotoDisplayinger.AppState) -&gt; PhotoDisplayinger.RootViewModel"
+                  moduleName = "PhotoDisplayinger"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/scales/Developer/code.mine/PhotoDisplayinger/PhotoDisplayinger/Sources/RootViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  uuid = "480D017D-D405-4748-927A-E29EB1B575DF - 9b7afa2608424725"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Foundation.URL) -&gt; PhotoDisplayinger.PhotoViewModel in closure #2 (Swift.Array&lt;Foundation.URL&gt;) -&gt; () in PhotoDisplayinger.RootViewModel.init(appState: PhotoDisplayinger.AppState) -&gt; PhotoDisplayinger.RootViewModel"
+                  moduleName = "PhotoDisplayinger"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/scales/Developer/code.mine/PhotoDisplayinger/PhotoDisplayinger/Sources/RootViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "34">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A60BA078-2018-4A8B-ADE3-6DAFA1259877"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhotoDisplayinger/Sources/RootViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "init(appState:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C983352B-78C2-42FE-8036-7B6EFC87ECCE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhotoDisplayinger/Sources/RootView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "C983352B-78C2-42FE-8036-7B6EFC87ECCE - 22a5d89fa093d497"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (PhotoDisplayinger.PhotoViewModel) -&gt; SwiftUI._ConditionalContent&lt;SwiftUI.Image, SwiftUI.Text&gt; in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;PhotoDisplayinger.PhotoViewModel&gt;, Foundation.URL, SwiftUI._ConditionalContent&lt;SwiftUI.Image, SwiftUI.Text&gt;&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0 in PhotoDisplayinger.RootView.body.getter : some"
+                  moduleName = "PhotoDisplayinger"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/scales/Developer/code.mine/PhotoDisplayinger/PhotoDisplayinger/Sources/RootView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "145">
+               </Location>
+               <Location
+                  uuid = "C983352B-78C2-42FE-8036-7B6EFC87ECCE - 22a5d89fa093d497"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (PhotoDisplayinger.PhotoViewModel) -&gt; SwiftUI._ConditionalContent&lt;SwiftUI.Image, SwiftUI.Text&gt; in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;PhotoDisplayinger.PhotoViewModel&gt;, Foundation.URL, SwiftUI._ConditionalContent&lt;SwiftUI.Image, SwiftUI.Text&gt;&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0 in PhotoDisplayinger.RootView.body.getter : some"
+                  moduleName = "PhotoDisplayinger"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/scales/Developer/code.mine/PhotoDisplayinger/PhotoDisplayinger/Sources/RootView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "788">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "412D0CF7-AE35-4423-ADF5-366BE1F5142F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhotoDisplayinger/Sources/ObjectDownloading+CGImage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "downloadCGImage(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9AC0992D-5DCD-43D0-A339-511E912869AC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhotoDisplayinger/Sources/PhotoView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "9AC0992D-5DCD-43D0-A339-511E912869AC - b86cd7be13802f56"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI._ConditionalContent&lt;SwiftUI.Image, SwiftUI.Text&gt;, SwiftUI.Text)&gt; in PhotoDisplayinger.PhotoView.body.getter : some"
+                  moduleName = "PhotoDisplayinger"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/scales/Developer/code.mine/PhotoDisplayinger/PhotoDisplayinger/Sources/PhotoView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "179">
+               </Location>
+               <Location
+                  uuid = "9AC0992D-5DCD-43D0-A339-511E912869AC - b86cd7be13802f56"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI._ConditionalContent&lt;SwiftUI.Image, SwiftUI.Text&gt;, SwiftUI.Text)&gt; in PhotoDisplayinger.PhotoView.body.getter : some"
+                  moduleName = "PhotoDisplayinger"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/scales/Developer/code.mine/PhotoDisplayinger/PhotoDisplayinger/Sources/PhotoView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "874">
+               </Location>
+               <Location
+                  uuid = "9AC0992D-5DCD-43D0-A339-511E912869AC - f174bd6da764b0b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI._ConditionalContent&lt;SwiftUI._ConditionalContent&lt;SwiftUI.Text, SwiftUI.Image&gt;, SwiftUI.Text&gt; in PhotoDisplayinger.PhotoView.body.getter : some"
+                  moduleName = "PhotoDisplayinger"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/scales/Developer/code.mine/PhotoDisplayinger/PhotoDisplayinger/Sources/PhotoView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "282">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD83C154-879A-4D7E-BCAC-006B0AF770A4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhotoDisplayinger/Sources/PhotoViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "init(url:downloader:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6CE5EEA4-C367-4149-B4C2-932FB5C098EC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhotoDisplayinger/Sources/PhotoView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0A8EC4FA-61B8-4A73-A057-5D0F27D7504C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhotoDisplayinger/Sources/PhotoView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9DC13C3C-9519-4326-AE77-06C645D9DEC2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhotoDisplayinger/Sources/PhotoView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "9DC13C3C-9519-4326-AE77-06C645D9DEC2 - 121bd809a38b9e50"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PhotoDisplayinger.PhotoView.body.getter : some"
+                  moduleName = "PhotoDisplayinger"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/scales/Developer/code.mine/PhotoDisplayinger/PhotoDisplayinger/Sources/PhotoView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "93">
+               </Location>
+               <Location
+                  uuid = "9DC13C3C-9519-4326-AE77-06C645D9DEC2 - f174bd6da764b34f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI._ConditionalContent&lt;SwiftUI._ConditionalContent&lt;SwiftUI.Text, SwiftUI.Image&gt;, SwiftUI.Text&gt; in PhotoDisplayinger.PhotoView.body.getter : some"
+                  moduleName = "PhotoDisplayinger"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/scales/Developer/code.mine/PhotoDisplayinger/PhotoDisplayinger/Sources/PhotoView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "265">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

@@ -23,6 +23,8 @@
 		B3183B682B48253800F15BEE /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B672B48253800F15BEE /* PhotoViewModel.swift */; };
 		B3183B6A2B4826DE00F15BEE /* PhotoViewModel+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B692B4826DE00F15BEE /* PhotoViewModel+Identifiable.swift */; };
 		B3183B6D2B4827F500F15BEE /* ObjectDownloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B6C2B4827F500F15BEE /* ObjectDownloading.swift */; };
+		B3183B702B48299F00F15BEE /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B6F2B48299F00F15BEE /* PhotoView.swift */; };
+		B3183B722B48473C00F15BEE /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B712B48473C00F15BEE /* RootViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		B3183B672B48253800F15BEE /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
 		B3183B692B4826DE00F15BEE /* PhotoViewModel+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotoViewModel+Identifiable.swift"; sourceTree = "<group>"; };
 		B3183B6C2B4827F500F15BEE /* ObjectDownloading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDownloading.swift; sourceTree = "<group>"; };
+		B3183B6F2B48299F00F15BEE /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		B3183B712B48473C00F15BEE /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,9 +163,11 @@
 				B3183B632B48205F00F15BEE /* ObjectDownloading+CGImage.swift */,
 				B3183B652B48221F00F15BEE /* ObjectDownloadingError.swift */,
 				B3183B5C2B47F49B00F15BEE /* ParsedResponse.swift */,
+				B3183B6F2B48299F00F15BEE /* PhotoView.swift */,
 				B3183B672B48253800F15BEE /* PhotoViewModel.swift */,
 				B3183B692B4826DE00F15BEE /* PhotoViewModel+Identifiable.swift */,
 				B3183B2F2B47E66C00F15BEE /* RootView.swift */,
+				B3183B712B48473C00F15BEE /* RootViewModel.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -298,7 +304,9 @@
 			files = (
 				B3183B642B48205F00F15BEE /* ObjectDownloading+CGImage.swift in Sources */,
 				B3183B302B47E66C00F15BEE /* RootView.swift in Sources */,
+				B3183B722B48473C00F15BEE /* RootViewModel.swift in Sources */,
 				B3183B5F2B48080500F15BEE /* AppState.swift in Sources */,
+				B3183B702B48299F00F15BEE /* PhotoView.swift in Sources */,
 				B3183B682B48253800F15BEE /* PhotoViewModel.swift in Sources */,
 				B3183B592B47F21100F15BEE /* ObjectDownloader.swift in Sources */,
 				B3183B5D2B47F49B00F15BEE /* ParsedResponse.swift in Sources */,

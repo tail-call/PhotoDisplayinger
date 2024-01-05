@@ -6,15 +6,25 @@
 //
 
 import SwiftUI
+import Combine
 
 struct RootView: View {
+    @ObservedObject var model: RootViewModel
     @ObservedObject var appState: AppState
+
+    init(
+        model: RootViewModel,
+        appState: AppState
+    ) {
+        self.model = model
+        self.appState = appState
+    }
 
     var body: some View {
         ScrollView {
             VStack {
-                ForEach(appState.photoURLsList, id: \.self) { url in
-                    Text("Hello, \(url)!")
+                ForEach(model.photos) { photo in
+                    PhotoView(model: photo)
                 }
             }
             .padding()
@@ -37,9 +47,12 @@ struct RootView: View {
 }
 
 #Preview {
-    RootView(
-        appState: AppState(
-            downloader: ObjectDownloader()
-        )
+    let appState = AppState(
+        downloader: ObjectDownloader()
+    )
+
+    return RootView(
+        model: RootViewModel(appState: appState),
+        appState: appState
     )
 }
