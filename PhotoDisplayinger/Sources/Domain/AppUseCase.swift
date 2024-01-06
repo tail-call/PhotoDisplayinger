@@ -5,6 +5,7 @@
 //  Created by Maria Zaitseva on 06.01.2024.
 //
 
+import CoreGraphics
 import Foundation
 
 private let photosEndpointURL = URL(
@@ -22,5 +23,13 @@ final class AppUseCase {
         return response.message.map { url in
             Photo(url: url)
         }
+    }
+
+    func image(for photo: Photo) async throws -> CGImage {
+        try CGImage.from(
+            data: try await URLSession.shared.dataIfCorrectResponse(
+                from: photo.url
+            )
+        )
     }
 }

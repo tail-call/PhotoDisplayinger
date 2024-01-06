@@ -17,10 +17,13 @@ final class PhotoViewModel: ObservableObject {
 
     @Published var state: State = .started
 
-    let url: URL
+    let photo: Photo
 
-    init(url: URL) {
-        self.url = url
+    private let appUseCase: AppUseCase
+
+    init(appUseCase: AppUseCase, photo: Photo) {
+        self.appUseCase = appUseCase
+        self.photo = photo
     }
 
     func beginDownloading() {
@@ -31,11 +34,7 @@ final class PhotoViewModel: ObservableObject {
         self.state = .loading(Task {
             do {
                 let state = State.image(
-                    try CGImage.from(
-                        data: try await URLSession.shared.dataIfCorrectResponse(
-                            from: url
-                        )
-                    )
+                    try await appUseCase.image(for: photo)
                 )
 
                 await MainActor.run {

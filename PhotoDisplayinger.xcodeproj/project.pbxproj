@@ -159,15 +159,11 @@
 		B3183B6B2B48277000F15BEE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B3183B832B49737D00F15BEE /* Domain */,
 				B3183B7E2B496EDA00F15BEE /* Foundation extensions */,
 				B3183B752B4856CF00F15BEE /* View */,
-				B3183B5E2B48080500F15BEE /* AppState.swift */,
-				B3183B7F2B496F9800F15BEE /* AppUseCase.swift */,
-				B3183B812B49700100F15BEE /* Photo.swift */,
 				B3183B612B481B9900F15BEE /* GlobalFactory.swift */,
 				B3183B2D2B47E66C00F15BEE /* Main.swift */,
-				B3183B652B48221F00F15BEE /* ObjectDownloadingError.swift */,
-				B3183B5C2B47F49B00F15BEE /* ParsedResponse.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -175,6 +171,7 @@
 		B3183B752B4856CF00F15BEE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B3183B5E2B48080500F15BEE /* AppState.swift */,
 				B3183B6F2B48299F00F15BEE /* PhotoView.swift */,
 				B3183B672B48253800F15BEE /* PhotoViewModel.swift */,
 				B3183B692B4826DE00F15BEE /* PhotoViewModel+Identifiable.swift */,
@@ -192,6 +189,17 @@
 				B3183B782B4969EC00F15BEE /* URLSession+dataIfCorrectResponse.swift */,
 			);
 			path = "Foundation extensions";
+			sourceTree = "<group>";
+		};
+		B3183B832B49737D00F15BEE /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B3183B7F2B496F9800F15BEE /* AppUseCase.swift */,
+				B3183B652B48221F00F15BEE /* ObjectDownloadingError.swift */,
+				B3183B5C2B47F49B00F15BEE /* ParsedResponse.swift */,
+				B3183B812B49700100F15BEE /* Photo.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

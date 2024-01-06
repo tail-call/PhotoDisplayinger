@@ -23,8 +23,8 @@ final class GlobalFactory {
 
     func makeAppState() -> AppState { appState }
 
-    func makePhotoViewModel(url: URL) -> PhotoViewModel {
-        PhotoViewModel(url: url)
+    func makePhotoViewModel(from photo: Photo) -> PhotoViewModel {
+        PhotoViewModel(appUseCase: appUseCase, photo: photo)
     }
 
     // MARK: - Private

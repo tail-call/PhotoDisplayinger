@@ -10,5 +10,5 @@ import Foundation
 extension PhotoViewModel: Identifiable {
     typealias ID = URL
 
-    var id: URL { url }
+    var id: URL { photo.url }
 }

@@ -26,7 +26,7 @@ final class RootViewModel: ObservableObject {
             },
             receiveValue: { photos in
                 let photos = photos.map { photo in
-                    factory.makePhotoViewModel(url: photo.url)
+                    factory.makePhotoViewModel(from: photo)
                 }
 
                 Task {
