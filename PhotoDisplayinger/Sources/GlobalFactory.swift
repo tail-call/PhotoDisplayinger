@@ -24,16 +24,12 @@ final class GlobalFactory {
     func makeAppState() -> AppState { appState }
 
     func makePhotoViewModel(url: URL) -> PhotoViewModel {
-        PhotoViewModel(url: url, downloader: downloader)
+        PhotoViewModel(url: url)
     }
 
     // MARK: - Private
 
-    private lazy var downloader: ObjectDownloading = {
-        ObjectDownloader()
-    }()
-
     private lazy var appState: AppState = {
-        AppState(downloader: downloader)
+        AppState()
     }()
 }

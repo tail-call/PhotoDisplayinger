@@ -1,15 +1,15 @@
 //
-//  ObjectDownloader.swift
+//  URLSession+dataIfCorrectResponse.swift
 //  PhotoDisplayinger
 //
-//  Created by Maria Zaitseva on 05.01.2024.
+//  Created by Maria Zaitseva on 06.01.2024.
 //
 
 import Foundation
 
-final class ObjectDownloader: ObjectDownloading {
-    func downloadData(from url: URL) async throws -> Data {
-        let (data, response) = try await URLSession.shared.data(from: url)
+extension URLSession {
+    func dataIfCorrectResponse(from url: URL) async throws -> Data {
+        let (data, response) = try await data(from: url)
 
         guard
             let httpResponse = response as? HTTPURLResponse,

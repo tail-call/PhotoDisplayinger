@@ -44,9 +44,7 @@ struct RootView: View {
 }
 
 #Preview {
-    let appState = AppState(
-        downloader: ObjectDownloader()
-    )
+    let appState = AppState()
 
     return RootView(
         model: RootViewModel(appState: appState, factory: .shared),

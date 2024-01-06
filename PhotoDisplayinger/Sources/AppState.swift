@@ -16,10 +16,7 @@ final class AppState: ObservableObject {
     @Published var alertMessage: String?
     @Published var photoURLsList: [URL] = []
 
-    private var downloader: ObjectDownloading
-
-    init(downloader: ObjectDownloading) {
-        self.downloader = downloader
+    init() {
         afterInit()
     }
 
@@ -40,9 +37,10 @@ final class AppState: ObservableObject {
     private func afterInit() {
         Task {
             do {
-                let response = try await downloader.downloadObject(
-                    of: ParsedResponse.self,
-                    from: endpointURL
+                let response = try await ParsedResponse(
+                    jsonData: try URLSession.shared.dataIfCorrectResponse(
+                        from: endpointURL
+                    )
                 )
 
                 await MainActor.run {

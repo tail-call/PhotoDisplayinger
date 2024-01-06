@@ -19,11 +19,8 @@ final class PhotoViewModel: ObservableObject {
 
     let url: URL
 
-    private let downloader: ObjectDownloading
-
-    init(url: URL, downloader: ObjectDownloading) {
+    init(url: URL) {
         self.url = url
-        self.downloader = downloader
     }
 
     func beginDownloading() {
@@ -34,8 +31,13 @@ final class PhotoViewModel: ObservableObject {
         self.state = .loading(Task {
             do {
                 let state = State.image(
-                    try await downloader.downloadCGImage(from: url)
+                    try CGImage.from(
+                        data: try await URLSession.shared.dataIfCorrectResponse(
+                            from: url
+                        )
+                    )
                 )
+
                 await MainActor.run {
                     self.state = state
                 }
