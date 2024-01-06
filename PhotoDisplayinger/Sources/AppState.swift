@@ -7,16 +7,16 @@
 
 import Foundation
 
-private let endpointURL = URL(
-    string: "https://dog.ceo/api/breed/saluki/images"
-)!
-
 final class AppState: ObservableObject {
     @Published var isPresentingAlert: Bool = false
     @Published var alertMessage: String?
-    @Published var photoURLsList: [URL] = []
+    @Published var photos: [Photo] = []
 
-    init() {
+    private let appUseCase: AppUseCase
+
+    init(appUseCase: AppUseCase) {
+        self.appUseCase = appUseCase
+
         afterInit()
     }
 
@@ -37,14 +37,10 @@ final class AppState: ObservableObject {
     private func afterInit() {
         Task {
             do {
-                let response = try await ParsedResponse(
-                    jsonData: try URLSession.shared.dataIfCorrectResponse(
-                        from: endpointURL
-                    )
-                )
+                let photos = try await appUseCase.photosList()
 
                 await MainActor.run {
-                    photoURLsList = response.message
+                    self.photos = photos
                 }
             } catch {
                 print("⛔️ Error: \(error)")

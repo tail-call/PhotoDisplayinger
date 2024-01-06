@@ -30,6 +30,10 @@ final class GlobalFactory {
     // MARK: - Private
 
     private lazy var appState: AppState = {
-        AppState()
+        AppState(appUseCase: appUseCase)
+    }()
+
+    private lazy var appUseCase: AppUseCase = {
+        AppUseCase()
     }()
 }

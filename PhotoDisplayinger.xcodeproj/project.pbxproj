@@ -25,6 +25,8 @@
 		B3183B792B4969EC00F15BEE /* URLSession+dataIfCorrectResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B782B4969EC00F15BEE /* URLSession+dataIfCorrectResponse.swift */; };
 		B3183B7B2B496B2F00F15BEE /* Decodable+jsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B7A2B496B2F00F15BEE /* Decodable+jsonData.swift */; };
 		B3183B7D2B496C2B00F15BEE /* CGImage+fromData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B7C2B496C2B00F15BEE /* CGImage+fromData.swift */; };
+		B3183B802B496F9800F15BEE /* AppUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B7F2B496F9800F15BEE /* AppUseCase.swift */; };
+		B3183B822B49700100F15BEE /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3183B812B49700100F15BEE /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		B3183B782B4969EC00F15BEE /* URLSession+dataIfCorrectResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+dataIfCorrectResponse.swift"; sourceTree = "<group>"; };
 		B3183B7A2B496B2F00F15BEE /* Decodable+jsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+jsonData.swift"; sourceTree = "<group>"; };
 		B3183B7C2B496C2B00F15BEE /* CGImage+fromData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+fromData.swift"; sourceTree = "<group>"; };
+		B3183B7F2B496F9800F15BEE /* AppUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUseCase.swift; sourceTree = "<group>"; };
+		B3183B812B49700100F15BEE /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,8 @@
 				B3183B7E2B496EDA00F15BEE /* Foundation extensions */,
 				B3183B752B4856CF00F15BEE /* View */,
 				B3183B5E2B48080500F15BEE /* AppState.swift */,
+				B3183B7F2B496F9800F15BEE /* AppUseCase.swift */,
+				B3183B812B49700100F15BEE /* Photo.swift */,
 				B3183B612B481B9900F15BEE /* GlobalFactory.swift */,
 				B3183B2D2B47E66C00F15BEE /* Main.swift */,
 				B3183B652B48221F00F15BEE /* ObjectDownloadingError.swift */,
@@ -321,11 +327,13 @@
 				B3183B7B2B496B2F00F15BEE /* Decodable+jsonData.swift in Sources */,
 				B3183B302B47E66C00F15BEE /* RootView.swift in Sources */,
 				B3183B722B48473C00F15BEE /* RootViewModel.swift in Sources */,
+				B3183B802B496F9800F15BEE /* AppUseCase.swift in Sources */,
 				B3183B5F2B48080500F15BEE /* AppState.swift in Sources */,
 				B3183B7D2B496C2B00F15BEE /* CGImage+fromData.swift in Sources */,
 				B3183B702B48299F00F15BEE /* PhotoView.swift in Sources */,
 				B3183B792B4969EC00F15BEE /* URLSession+dataIfCorrectResponse.swift in Sources */,
 				B3183B682B48253800F15BEE /* PhotoViewModel.swift in Sources */,
+				B3183B822B49700100F15BEE /* Photo.swift in Sources */,
 				B3183B5D2B47F49B00F15BEE /* ParsedResponse.swift in Sources */,
 				B3183B2E2B47E66C00F15BEE /* Main.swift in Sources */,
 				B3183B662B48221F00F15BEE /* ObjectDownloadingError.swift in Sources */,

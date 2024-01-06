@@ -44,7 +44,7 @@ struct RootView: View {
 }
 
 #Preview {
-    let appState = AppState()
+    let appState = AppState(appUseCase: AppUseCase())
 
     return RootView(
         model: RootViewModel(appState: appState, factory: .shared),

@@ -21,13 +21,14 @@ final class RootViewModel: ObservableObject {
         self.appState = appState
         self.factory = factory
 
-        cancellable = appState.$photoURLsList.sink(
+        cancellable = appState.$photos.sink(
             receiveCompletion: { _ in
             },
-            receiveValue: { urls in
-                let photos = urls.map { url in
-                    factory.makePhotoViewModel(url: url)
+            receiveValue: { photos in
+                let photos = photos.map { photo in
+                    factory.makePhotoViewModel(url: photo.url)
                 }
+
                 Task {
                     await MainActor.run {
                         self.photos = photos
